@@ -43,7 +43,7 @@ def AddModemAssertion(info):
   if m:
     version = m.group(1).rstrip()
     if len(version) and '*' not in version:
-      info.script.AppendExtra(('assert(leeco.verify_modem("%s") == "1");' % (version)))
+      #info.script.AppendExtra(('assert(leeco.verify_modem("%s") == "1");' % (version)))
   return
 
 def RunCustomScript(info, name, arg):
